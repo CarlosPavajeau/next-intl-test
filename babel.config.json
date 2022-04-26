@@ -1,0 +1,20 @@
+{
+    "presets": [
+        "next/babel"
+      ],
+      "ignore": [
+        "**/*.test.{t,j}s",
+        "**/*.test.{t,j}sx",
+        "**/*.spec.{t,j}s",
+        "**/*.spec.{t,j}sx"
+      ],
+      "plugins": [
+        [
+          "formatjs",
+          {
+            "idInterpolationPattern": "[sha512:contenthash:base64:6]",
+            "ast": true
+          }
+        ]
+      ]
+  }
